@@ -1,0 +1,6 @@
+framework module Pods_ExameniOSTests {
+  umbrella header "Pods-ExameniOSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
