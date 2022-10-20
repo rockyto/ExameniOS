@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		001DD28E55A628A70FCE97AA /* Pods_ExameniOS_ExameniOSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B0DC8B5E9303D8EB5D79F6 /* Pods_ExameniOS_ExameniOSUITests.framework */; };
+		2292B5A56E6D4DD920AA3063 /* Pods_ExameniOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1CF5B90CCF5C6B69D378C2 /* Pods_ExameniOS.framework */; };
 		93744F0A28FF51BE00FC318E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F0928FF51BE00FC318E /* AppDelegate.swift */; };
 		93744F0C28FF51BE00FC318E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F0B28FF51BE00FC318E /* SceneDelegate.swift */; };
 		93744F0E28FF51BE00FC318E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F0D28FF51BE00FC318E /* ViewController.swift */; };
-		93744F1128FF51BE00FC318E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93744F0F28FF51BE00FC318E /* Main.storyboard */; };
+		93744F1128FF51BE00FC318E /* TMDBView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93744F0F28FF51BE00FC318E /* TMDBView.storyboard */; };
 		93744F1328FF51C100FC318E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93744F1228FF51C100FC318E /* Assets.xcassets */; };
 		93744F1628FF51C100FC318E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93744F1428FF51C100FC318E /* LaunchScreen.storyboard */; };
 		93744F2128FF51C100FC318E /* ExameniOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F2028FF51C100FC318E /* ExameniOSTests.swift */; };
 		93744F2B28FF51C100FC318E /* ExameniOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F2A28FF51C100FC318E /* ExameniOSUITests.swift */; };
 		93744F2D28FF51C100FC318E /* ExameniOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F2C28FF51C100FC318E /* ExameniOSUITestsLaunchTests.swift */; };
+		93744F4028FF61E500FC318E /* TMDBPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3928FF61E500FC318E /* TMDBPresenter.swift */; };
+		93744F4128FF61E500FC318E /* TMDBLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3A28FF61E500FC318E /* TMDBLocalDataManager.swift */; };
+		93744F4228FF61E500FC318E /* TMDBProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3B28FF61E500FC318E /* TMDBProtocols.swift */; };
+		93744F4328FF61E500FC318E /* TMDBInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3C28FF61E500FC318E /* TMDBInteractor.swift */; };
+		93744F4428FF61E500FC318E /* TMDBView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3D28FF61E500FC318E /* TMDBView.swift */; };
+		93744F4528FF61E500FC318E /* TMDBRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3E28FF61E500FC318E /* TMDBRemoteDataManager.swift */; };
+		93744F4628FF61E500FC318E /* TMDBWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93744F3F28FF61E500FC318E /* TMDBWireFrame.swift */; };
+		9375F0C62900A5EF00EC9B8B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9375F0C52900A5EF00EC9B8B /* GoogleService-Info.plist */; };
+		9375F0C92900A88700EC9B8B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 9375F0C82900A88700EC9B8B /* FirebaseAuth */; };
+		9375F0CB2900A88700EC9B8B /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 9375F0CA2900A88700EC9B8B /* FirebaseDatabase */; };
+		9375F0CD2900A88700EC9B8B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9375F0CC2900A88700EC9B8B /* FirebaseFirestore */; };
+		9375F0CF2900A88700EC9B8B /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 9375F0CE2900A88700EC9B8B /* FirebaseStorage */; };
+		9375F0D42900C68500EC9B8B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9375F0D22900C68300EC9B8B /* MBProgressHUD.m */; };
+		E05965F5EA8E367B4EDB6F50 /* Pods_ExameniOSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63400E9A12E16297487B507D /* Pods_ExameniOSTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08B0DC8B5E9303D8EB5D79F6 /* Pods_ExameniOS_ExameniOSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExameniOS_ExameniOSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A01E8D4AA29199E0BEC9863 /* Pods-ExameniOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExameniOSTests.release.xcconfig"; path = "Target Support Files/Pods-ExameniOSTests/Pods-ExameniOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		1CF71F14499427565AF00931 /* Pods-ExameniOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExameniOS.debug.xcconfig"; path = "Target Support Files/Pods-ExameniOS/Pods-ExameniOS.debug.xcconfig"; sourceTree = "<group>"; };
+		306354F21E5CC7BF812E473E /* Pods-ExameniOS-ExameniOSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExameniOS-ExameniOSUITests.release.xcconfig"; path = "Target Support Files/Pods-ExameniOS-ExameniOSUITests/Pods-ExameniOS-ExameniOSUITests.release.xcconfig"; sourceTree = "<group>"; };
+		394D030EC6375B73574CE764 /* Pods-ExameniOS-ExameniOSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExameniOS-ExameniOSUITests.debug.xcconfig"; path = "Target Support Files/Pods-ExameniOS-ExameniOSUITests/Pods-ExameniOS-ExameniOSUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		63400E9A12E16297487B507D /* Pods_ExameniOSTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExameniOSTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93744F0628FF51BE00FC318E /* ExameniOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExameniOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93744F0928FF51BE00FC318E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93744F0B28FF51BE00FC318E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		93744F0D28FF51BE00FC318E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		93744F1028FF51BE00FC318E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		93744F1028FF51BE00FC318E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TMDBView.storyboard; sourceTree = "<group>"; };
 		93744F1228FF51C100FC318E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93744F1528FF51C100FC318E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		93744F1728FF51C100FC318E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +71,20 @@
 		93744F2628FF51C100FC318E /* ExameniOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExameniOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93744F2A28FF51C100FC318E /* ExameniOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExameniOSUITests.swift; sourceTree = "<group>"; };
 		93744F2C28FF51C100FC318E /* ExameniOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExameniOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		93744F3928FF61E500FC318E /* TMDBPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBPresenter.swift; sourceTree = "<group>"; };
+		93744F3A28FF61E500FC318E /* TMDBLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBLocalDataManager.swift; sourceTree = "<group>"; };
+		93744F3B28FF61E500FC318E /* TMDBProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBProtocols.swift; sourceTree = "<group>"; };
+		93744F3C28FF61E500FC318E /* TMDBInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBInteractor.swift; sourceTree = "<group>"; };
+		93744F3D28FF61E500FC318E /* TMDBView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBView.swift; sourceTree = "<group>"; };
+		93744F3E28FF61E500FC318E /* TMDBRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBRemoteDataManager.swift; sourceTree = "<group>"; };
+		93744F3F28FF61E500FC318E /* TMDBWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBWireFrame.swift; sourceTree = "<group>"; };
+		9375F0C52900A5EF00EC9B8B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9375F0D12900C68200EC9B8B /* ExameniOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExameniOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		9375F0D22900C68300EC9B8B /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		9375F0D32900C68500EC9B8B /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		D960587C5540B74C39F3F971 /* Pods-ExameniOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExameniOS.release.xcconfig"; path = "Target Support Files/Pods-ExameniOS/Pods-ExameniOS.release.xcconfig"; sourceTree = "<group>"; };
+		EE1CF5B90CCF5C6B69D378C2 /* Pods_ExameniOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ExameniOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F97FE4504CA4E40480259CD9 /* Pods-ExameniOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExameniOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ExameniOSTests/Pods-ExameniOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +92,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9375F0CB2900A88700EC9B8B /* FirebaseDatabase in Frameworks */,
+				9375F0CD2900A88700EC9B8B /* FirebaseFirestore in Frameworks */,
+				2292B5A56E6D4DD920AA3063 /* Pods_ExameniOS.framework in Frameworks */,
+				9375F0CF2900A88700EC9B8B /* FirebaseStorage in Frameworks */,
+				9375F0C92900A88700EC9B8B /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E05965F5EA8E367B4EDB6F50 /* Pods_ExameniOSTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +112,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				001DD28E55A628A70FCE97AA /* Pods_ExameniOS_ExameniOSUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3BA5D9DE4A9B28E55F1B557D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1CF71F14499427565AF00931 /* Pods-ExameniOS.debug.xcconfig */,
+				D960587C5540B74C39F3F971 /* Pods-ExameniOS.release.xcconfig */,
+				394D030EC6375B73574CE764 /* Pods-ExameniOS-ExameniOSUITests.debug.xcconfig */,
+				306354F21E5CC7BF812E473E /* Pods-ExameniOS-ExameniOSUITests.release.xcconfig */,
+				F97FE4504CA4E40480259CD9 /* Pods-ExameniOSTests.debug.xcconfig */,
+				0A01E8D4AA29199E0BEC9863 /* Pods-ExameniOSTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		93744EFD28FF51BE00FC318E = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +139,8 @@
 				93744F1F28FF51C100FC318E /* ExameniOSTests */,
 				93744F2928FF51C100FC318E /* ExameniOSUITests */,
 				93744F0728FF51BE00FC318E /* Products */,
+				3BA5D9DE4A9B28E55F1B557D /* Pods */,
+				FEC992896D3ED9A1F1E739BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +157,15 @@
 		93744F0828FF51BE00FC318E /* ExameniOS */ = {
 			isa = PBXGroup;
 			children = (
+				9375F0D02900C66900EC9B8B /* MBProgress */,
 				93744F0928FF51BE00FC318E /* AppDelegate.swift */,
 				93744F0B28FF51BE00FC318E /* SceneDelegate.swift */,
 				93744F0D28FF51BE00FC318E /* ViewController.swift */,
-				93744F0F28FF51BE00FC318E /* Main.storyboard */,
+				93744F0F28FF51BE00FC318E /* TMDBView.storyboard */,
+				93744F4728FF63AE00FC318E /* TMDB */,
 				93744F1228FF51C100FC318E /* Assets.xcassets */,
 				93744F1428FF51C100FC318E /* LaunchScreen.storyboard */,
+				9375F0C52900A5EF00EC9B8B /* GoogleService-Info.plist */,
 				93744F1728FF51C100FC318E /* Info.plist */,
 			);
 			path = ExameniOS;
@@ -127,6 +188,40 @@
 			path = ExameniOSUITests;
 			sourceTree = "<group>";
 		};
+		93744F4728FF63AE00FC318E /* TMDB */ = {
+			isa = PBXGroup;
+			children = (
+				93744F3928FF61E500FC318E /* TMDBPresenter.swift */,
+				93744F3A28FF61E500FC318E /* TMDBLocalDataManager.swift */,
+				93744F3B28FF61E500FC318E /* TMDBProtocols.swift */,
+				93744F3C28FF61E500FC318E /* TMDBInteractor.swift */,
+				93744F3D28FF61E500FC318E /* TMDBView.swift */,
+				93744F3E28FF61E500FC318E /* TMDBRemoteDataManager.swift */,
+				93744F3F28FF61E500FC318E /* TMDBWireFrame.swift */,
+			);
+			path = TMDB;
+			sourceTree = "<group>";
+		};
+		9375F0D02900C66900EC9B8B /* MBProgress */ = {
+			isa = PBXGroup;
+			children = (
+				9375F0D32900C68500EC9B8B /* MBProgressHUD.h */,
+				9375F0D22900C68300EC9B8B /* MBProgressHUD.m */,
+				9375F0D12900C68200EC9B8B /* ExameniOS-Bridging-Header.h */,
+			);
+			path = MBProgress;
+			sourceTree = "<group>";
+		};
+		FEC992896D3ED9A1F1E739BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE1CF5B90CCF5C6B69D378C2 /* Pods_ExameniOS.framework */,
+				08B0DC8B5E9303D8EB5D79F6 /* Pods_ExameniOS_ExameniOSUITests.framework */,
+				63400E9A12E16297487B507D /* Pods_ExameniOSTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,15 +229,23 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93744F3028FF51C100FC318E /* Build configuration list for PBXNativeTarget "ExameniOS" */;
 			buildPhases = (
+				D5024B1EBA7EFA3FB747317A /* [CP] Check Pods Manifest.lock */,
 				93744F0228FF51BE00FC318E /* Sources */,
 				93744F0328FF51BE00FC318E /* Frameworks */,
 				93744F0428FF51BE00FC318E /* Resources */,
+				BA4903A40237F4CB28B94845 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ExameniOS;
+			packageProductDependencies = (
+				9375F0C82900A88700EC9B8B /* FirebaseAuth */,
+				9375F0CA2900A88700EC9B8B /* FirebaseDatabase */,
+				9375F0CC2900A88700EC9B8B /* FirebaseFirestore */,
+				9375F0CE2900A88700EC9B8B /* FirebaseStorage */,
+			);
 			productName = ExameniOS;
 			productReference = 93744F0628FF51BE00FC318E /* ExameniOS.app */;
 			productType = "com.apple.product-type.application";
@@ -151,6 +254,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93744F3328FF51C100FC318E /* Build configuration list for PBXNativeTarget "ExameniOSTests" */;
 			buildPhases = (
+				419C73D7CED9C99F2D1728AB /* [CP] Check Pods Manifest.lock */,
 				93744F1828FF51C100FC318E /* Sources */,
 				93744F1928FF51C100FC318E /* Frameworks */,
 				93744F1A28FF51C100FC318E /* Resources */,
@@ -169,9 +273,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93744F3628FF51C100FC318E /* Build configuration list for PBXNativeTarget "ExameniOSUITests" */;
 			buildPhases = (
+				134327A2DB80EB01ACD8198B /* [CP] Check Pods Manifest.lock */,
 				93744F2228FF51C100FC318E /* Sources */,
 				93744F2328FF51C100FC318E /* Frameworks */,
 				93744F2428FF51C100FC318E /* Resources */,
+				E06AA758A9162A3AAE26FF63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +301,7 @@
 				TargetAttributes = {
 					93744F0528FF51BE00FC318E = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 					93744F1B28FF51C100FC318E = {
 						CreatedOnToolsVersion = 14.0.1;
@@ -215,6 +322,9 @@
 				Base,
 			);
 			mainGroup = 93744EFD28FF51BE00FC318E;
+			packageReferences = (
+				9375F0C72900A88700EC9B8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 93744F0728FF51BE00FC318E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,8 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				93744F1628FF51C100FC318E /* LaunchScreen.storyboard in Resources */,
+				9375F0C62900A5EF00EC9B8B /* GoogleService-Info.plist in Resources */,
 				93744F1328FF51C100FC318E /* Assets.xcassets in Resources */,
-				93744F1128FF51BE00FC318E /* Main.storyboard in Resources */,
+				93744F1128FF51BE00FC318E /* TMDBView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +364,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		134327A2DB80EB01ACD8198B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExameniOS-ExameniOSUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419C73D7CED9C99F2D1728AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExameniOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA4903A40237F4CB28B94845 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExameniOS/Pods-ExameniOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExameniOS/Pods-ExameniOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExameniOS/Pods-ExameniOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5024B1EBA7EFA3FB747317A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ExameniOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E06AA758A9162A3AAE26FF63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExameniOS-ExameniOSUITests/Pods-ExameniOS-ExameniOSUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ExameniOS-ExameniOSUITests/Pods-ExameniOS-ExameniOSUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ExameniOS-ExameniOSUITests/Pods-ExameniOS-ExameniOSUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		93744F0228FF51BE00FC318E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				93744F0E28FF51BE00FC318E /* ViewController.swift in Sources */,
+				93744F4128FF61E500FC318E /* TMDBLocalDataManager.swift in Sources */,
+				93744F4228FF61E500FC318E /* TMDBProtocols.swift in Sources */,
+				93744F4428FF61E500FC318E /* TMDBView.swift in Sources */,
+				9375F0D42900C68500EC9B8B /* MBProgressHUD.m in Sources */,
+				93744F4528FF61E500FC318E /* TMDBRemoteDataManager.swift in Sources */,
+				93744F4028FF61E500FC318E /* TMDBPresenter.swift in Sources */,
 				93744F0A28FF51BE00FC318E /* AppDelegate.swift in Sources */,
 				93744F0C28FF51BE00FC318E /* SceneDelegate.swift in Sources */,
+				93744F4328FF61E500FC318E /* TMDBInteractor.swift in Sources */,
+				93744F4628FF61E500FC318E /* TMDBWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,12 +519,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		93744F0F28FF51BE00FC318E /* Main.storyboard */ = {
+		93744F0F28FF51BE00FC318E /* TMDBView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				93744F1028FF51BE00FC318E /* Base */,
 			);
-			name = Main.storyboard;
+			name = TMDBView.storyboard;
 			sourceTree = "<group>";
 		};
 		93744F1428FF51C100FC318E /* LaunchScreen.storyboard */ = {
@@ -432,19 +654,21 @@
 		};
 		93744F3128FF51C100FC318E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CF71F14499427565AF00931 /* Pods-ExameniOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62X9Z2N3KR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExameniOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = TMDBView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,27 +676,34 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mx.coderoi.ExameniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExameniOS/MBProgress/ExameniOS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		93744F3228FF51C100FC318E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D960587C5540B74C39F3F971 /* Pods-ExameniOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 62X9Z2N3KR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ExameniOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UIMainStoryboardFile = TMDBView;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -480,14 +711,19 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mx.coderoi.ExameniOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "ExameniOS/MBProgress/ExameniOS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		93744F3428FF51C100FC318E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F97FE4504CA4E40480259CD9 /* Pods-ExameniOSTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +744,7 @@
 		};
 		93744F3528FF51C100FC318E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A01E8D4AA29199E0BEC9863 /* Pods-ExameniOSTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +765,7 @@
 		};
 		93744F3728FF51C100FC318E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 394D030EC6375B73574CE764 /* Pods-ExameniOS-ExameniOSUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +784,7 @@
 		};
 		93744F3828FF51C100FC318E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 306354F21E5CC7BF812E473E /* Pods-ExameniOS-ExameniOSUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -602,6 +841,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9375F0C72900A88700EC9B8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9375F0C82900A88700EC9B8B /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9375F0C72900A88700EC9B8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		9375F0CA2900A88700EC9B8B /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9375F0C72900A88700EC9B8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		9375F0CC2900A88700EC9B8B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9375F0C72900A88700EC9B8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		9375F0CE2900A88700EC9B8B /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9375F0C72900A88700EC9B8B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 93744EFE28FF51BE00FC318E /* Project object */;
 }
