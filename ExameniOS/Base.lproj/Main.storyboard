@@ -24,35 +24,56 @@
             </objects>
             <point key="canvasLocation" x="950.76923076923072" y="84.597156398104261"/>
         </scene>
-        <!--View-->
+        <!--ViewTMDB-->
         <scene sceneID="yOw-a0-Luj">
             <objects>
-                <viewController id="eiT-xf-pzM" customClass="TMDBView" customModule="ExameniOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eiT-xf-pzM" customClass="ViewTMDB" customModule="ExameniOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ta6-Hf-Jjm">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The movie DB" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgP-20-eXZ">
-                                <rect key="frame" x="142" y="188" width="107" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="653-WD-FgB">
+                                <rect key="frame" x="0.0" y="91" width="390" height="670"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="390" id="JXI-IF-b2p"/>
+                                    <constraint firstAttribute="height" constant="670" id="hrl-1U-mUo"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="74" id="KwQ-6x-xcJ">
+                                        <rect key="frame" x="0.0" y="50" width="390" height="74"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="KwQ-6x-xcJ" id="oON-mg-X8W">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="74"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="eiT-xf-pzM" id="HDW-ZJ-tJd"/>
+                                    <outlet property="delegate" destination="eiT-xf-pzM" id="6kF-zY-ulp"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="B5N-uQ-5O9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="653-WD-FgB" firstAttribute="trailing" secondItem="B5N-uQ-5O9" secondAttribute="trailing" id="0Wg-k8-SQN"/>
+                            <constraint firstItem="653-WD-FgB" firstAttribute="top" secondItem="B5N-uQ-5O9" secondAttribute="top" id="9tI-IM-s0W"/>
+                            <constraint firstItem="653-WD-FgB" firstAttribute="bottom" secondItem="B5N-uQ-5O9" secondAttribute="bottom" id="GNA-H5-XDt"/>
+                            <constraint firstItem="653-WD-FgB" firstAttribute="leading" secondItem="B5N-uQ-5O9" secondAttribute="leading" id="mo6-XE-CcD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9CR-4r-7vw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J98-Pe-pi0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="977" y="767"/>
+            <point key="canvasLocation" x="949.23076923076917" y="803.3175355450237"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="f3v-D5-l9Y">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="a7y-FU-vnn" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="viewController" automaticallyAdjustsScrollViewInsets="NO" id="a7y-FU-vnn" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ibg-sT-dlL">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
@@ -60,33 +81,13 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="dZX-qf-HVF" kind="relationship" relationship="viewControllers" id="BSM-u6-6j2"/>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="n3T-DG-0AK"/>
-                        <segue destination="K0d-iu-iSI" kind="relationship" relationship="viewControllers" id="Muf-He-dgn"/>
+                        <segue destination="Rti-dl-pUq" kind="relationship" relationship="viewControllers" id="sDg-TI-XdI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qe1-9G-GDk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="21.538461538461537" y="84.597156398104261"/>
-        </scene>
-        <!--Peliculas-->
-        <scene sceneID="Oba-Nd-F5t">
-            <objects>
-                <navigationController storyboardIdentifier="TMDBView" automaticallyAdjustsScrollViewInsets="NO" id="dZX-qf-HVF" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Peliculas" image="airplayvideo" catalog="system" id="jeI-OP-oSq"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="cK4-ai-JiR">
-                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="eiT-xf-pzM" kind="relationship" relationship="rootViewController" id="Emq-6S-7DL"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FDl-Ac-gj9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="22" y="766"/>
         </scene>
         <!--Item-->
         <scene sceneID="DOs-dw-pKc">
@@ -104,10 +105,29 @@
             </objects>
             <point key="canvasLocation" x="951" y="-663"/>
         </scene>
+        <!--Movies-->
+        <scene sceneID="eCc-de-vsc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Rti-dl-pUq" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Movies" image="play.square.fill" catalog="system" id="QtL-XF-tEh"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8IN-TQ-wl6">
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="eiT-xf-pzM" kind="relationship" relationship="rootViewController" id="1kK-fD-Pke"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6v8-IC-FsC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="803.3175355450237"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="airplayvideo" catalog="system" width="128" height="97"/>
         <image name="person.circle" catalog="system" width="128" height="123"/>
+        <image name="play.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
